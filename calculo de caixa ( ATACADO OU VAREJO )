@@ -1,0 +1,31 @@
+#programa de cálculo de caixa de atacado e varejo
+
+
+
+qtde_macas=int(input('Informe a quantidade de maças compradas: '))
+
+valor_unit=float(input('Informe o preço unitário da maça: '))
+
+print('Quantidade de Maças Compradas: ',qtde_macas)
+
+print('Valor Unitário da Maça: ',valor_unit)
+
+if(qtde_macas>12):
+
+    print('Você tem direito a desconto')
+
+    valor_total=qtde_macas*valor_unit
+
+    print('Valor Total sem desconto: ',valor_total)
+
+    print('Valor do Desconto:',valor_total*15/100)
+
+    print('Valor Total com o desconto: ',valor_total-(valor_total*15/100))
+
+else:
+
+    print('Você não tem direito a desconto')
+
+    valor_total=qtde_macas*valor_unit
+
+    print('Valor Total:',valor_total)
