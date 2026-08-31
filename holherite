@@ -1,0 +1,53 @@
+sal_bruto=float(input('Informe o valor do Salário Bruto: '))
+
+tx_aumento=float(input('Informe a taxa de aumento: '))
+
+vlr_aumento=sal_bruto*tx_aumento/100
+
+
+
+taxa_vt=float(input('Informe o valor da taxa do Vale Transporte: '))
+
+
+
+taxa_vr=float(input('Informe o valor da taxa do Vale Refeição:'))
+
+
+
+taxa_inss=float(input('Informe o valor da taxa do INSS:'))
+
+
+
+print('****Holerite******')
+
+
+
+print('Salário Bruto Antigo: ',sal_bruto)
+
+print('Taxa de Aumento: ',tx_aumento,'%')
+
+print ('Valor do Aumento: ',vlr_aumento)
+
+sal_bruto=sal_bruto+vlr_aumento
+
+print('Salário Bruto com Aumento: ',sal_bruto)
+
+print('Taxa do Vale Transporte: ',taxa_vt,'%')
+
+print('Valor do Desconto do Vale Transporte: ',sal_bruto*taxa_vt/100)
+
+valor_vt=sal_bruto*taxa_vt/100
+
+valor_vr=sal_bruto*taxa_vr/100
+
+print('Taxa do Vale Refeição:',taxa_vr,'%')
+
+print('Valor do Desconto do Vale Refeição:',valor_vr)
+
+valor_inss=sal_bruto*taxa_inss/100
+
+print('Taxa do INSS: ',taxa_inss,'%')
+
+print('Valor do Desconto do INSS: ',valor_inss)
+
+print('Salário Líquido: ',sal_bruto-(valor_vt+valor_vr+valor_inss))
