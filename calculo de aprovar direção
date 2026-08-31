@@ -1,0 +1,25 @@
+#programa que calcula a idade e informa se pode ou não dirigir
+
+ano_nasc=int(input('Informe o ano de Nascimento: '))
+
+ano_atual=int(input('Informe o ano Atual: '))
+
+idade=ano_atual-ano_nasc
+
+print('Você nasceu em: ',ano_nasc)
+
+print('Estamos no ano de: ',ano_atual)
+
+print('Você tem ',idade,' anos.')
+
+if(idade>=18):
+
+    print('Você PODE DIRIGIR.')
+
+    print('Você pode dirigir há',idade-18,' anos.')
+
+else:
+
+    print('Você NÃO PODE DIRIGIR')
+
+    print('Falta', 18-idade, 'anos para poder dirigir')
