@@ -1,0 +1,11 @@
+#PROGRAMA QUE ANALISA A FIGURA GEOMERICA E CALCULA A ÀREA
+altura=float(input('Informe o tamanho da altura:'))
+base=float(input('Insira a base:'))
+
+
+print('\n A area da figura é de:',base+altura)
+
+if(altura==base):
+     print(' a sua figura é de um quadrado!!!')
+else:
+    print(' a sua figura de é de um retangulo!!!')
