@@ -1,0 +1,66 @@
+resposta="s"
+
+while resposta=="s":
+
+    print("*** Menu Calculadora****")
+
+    print("* 1 - Adição           *")
+
+    print("* 2 - Subtração        *")
+
+    print("* 3 - multplcação      *")
+    
+    print("* 4 - divisão          *")
+
+    opc=int(input("Informe a opção desejada: "))
+
+    if opc==1:
+
+        num1=int(input("Informe o valor do 1º número: "))
+
+        num2=int(input("Informe o valor do 2º número: "))
+
+        resultado=num1+num2
+
+        print(num1," + ",num2," = ",resultado)
+
+    if opc==2:
+
+        num1=int(input("Informe o valor do 1º número: "))
+
+        num2=int(input("Informe o valor do 2º número: "))
+
+        resultado=num1-num2
+
+        print(num1," - ",num2," = ",resultado)
+        
+    
+    if opc==3:
+
+        num1=int(input("Informe o valor do 1º número: "))
+
+        num2=int(input("Informe o valor do 2º número: "))
+
+        resultado=num1*num2
+
+        print(num1," * ",num2," = ",resultado)
+    
+    
+    if opc==4:
+
+        num1=int(input("Informe o valor do 1º número: "))
+
+        num2=int(input("Informe o valor do 2º número: "))
+
+        resultado=num1/num2
+
+        print(num1," / ",num2," = ",resultado)
+        
+        
+    
+
+    resposta=(input("Deseja continuar(s/n): "))
+
+    if resposta=="n":
+
+        print("Saindo da Calcudora...")
