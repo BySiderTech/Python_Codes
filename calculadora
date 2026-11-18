@@ -1,3 +1,4 @@
+cont=0;
 resposta="s"
 
 while resposta=="s":
@@ -56,9 +57,13 @@ while resposta=="s":
 
         print(num1," / ",num2," = ",resultado)
         
+    if( opc>1 and opc <= 4 ):
+       cont=cont+1
+    
+    if opc==5:
+        resposta="N"
         
     
-
     resposta=(input("Deseja continuar(s/n): "))
 
     if resposta=="n":
